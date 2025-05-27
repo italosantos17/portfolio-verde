@@ -47,7 +47,7 @@ body,.contato {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primaria);
+  background-color: var(--maisEscuro);
   padding: 1rem;
   flex-wrap: wrap;
   gap: 1rem;
