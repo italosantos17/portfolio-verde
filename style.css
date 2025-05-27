@@ -395,5 +395,28 @@ h1 {
   .icone-foto {
     display: none;
   }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .menu li {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+
+  .menu-link {
+    font-size: 0.9rem;
+  }
+
+  #toggle-tema {
+    position: static;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    width: auto;
+  }
 }
 
