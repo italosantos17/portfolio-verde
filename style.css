@@ -106,6 +106,7 @@ body,.contato {
 
 #toggle-tema:hover {
   background-color: var(--secundaria);
+  box-shadow: 0 0 10px var(--secundaria);
 }
 
 h1 {
