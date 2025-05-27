@@ -44,20 +44,9 @@ body,.contato {
     padding: 1.5rem;
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 3rem;
-}
 
-.menu-link {
-    text-decoration: none;
-    color: var(--claro);
-    font-weight: 500;
-    position: relative;
-    padding: 0.5rem 0;
-}
+
+
 
 
 .menu-link::before {
@@ -78,6 +67,57 @@ body,.contato {
     width: 100%;
     
     
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaria);
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+#toggle-tema {
+  background-color: var(--secundaria);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-tema:hover {
+  background-color: #444;
 }
 
 h1 {
@@ -246,21 +286,6 @@ h1 {
 }
 
 
-#toggle-tema {
-  background-color: var(--primaria);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-#toggle-tema:hover {
-  background-color: var(--secundaria);
-  box-shadow: 0 0 10px var(--secundaria);
-}
 
 #toggle-tema:hover::before {
   width: 100%;
@@ -380,26 +405,28 @@ h1 {
 
 @media (max-width: 768px) {
   .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .menu li {
-    font-size: 0.9rem;
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 
-  .menu-link {
-    font-size: 0.9rem;
-  }
-
+  .menu-link,
   #toggle-tema {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding: 0.4rem 0.8rem;
   }
 
   .icone-formulario,
   .icone-foto {
     display: none;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
