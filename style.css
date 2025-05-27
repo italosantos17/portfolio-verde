@@ -40,7 +40,7 @@ body,.contato {
     background-color: var(--maisEscuro);
     width: 100%;
     z-index: 100;
-    padding: 0.5rem 0;
+    padding: 0;
 }
 
 .menu {
