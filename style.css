@@ -247,22 +247,29 @@ h1 {
 
 
 #toggle-tema {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  z-index: 100;
-  padding: 10px;
+  background: none;
   border: none;
-  border-radius: 8px;
+  color: var(--claro);
+  font-weight: 500;
   cursor: pointer;
-  background-color: var(--primaria);
-  color: white;
-  transition: transform 0.3s ease; /* <-- adicione isso */
+  font-size: 1em;
+  padding: 0.5rem 0;
+  position: relative;
 }
 
-#toggle-tema:hover {
-    background-color: var(--secundaria);
-    box-shadow: 0 0 10px var(--secundaria);
+#toggle-tema::before {
+  content: '';
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--secundaria);
+  transition: width 0.3s ease;
+}
+
+#toggle-tema:hover::before {
+  width: 100%;
 }
 
 #btn-topo {
