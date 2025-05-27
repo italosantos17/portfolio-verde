@@ -105,7 +105,7 @@ body,.contato {
 }
 
 #toggle-tema:hover {
-  background-color: #444;
+  background-color: var(--secundaria);
 }
 
 h1 {
