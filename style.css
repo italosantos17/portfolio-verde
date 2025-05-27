@@ -338,7 +338,7 @@ h1 {
 }
 
 .botao-curriculo {
-    background-color: var(--primaria);
+    background-color: var(--secundaria);
     color: white;
     padding: 0.5em 1em;
     border-radius: 8px;
