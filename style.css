@@ -279,7 +279,7 @@ h1 {
 
 #btn-topo {
     position: fixed;
-    padding: 1rem 1rem;
+   padding-bottom: 40px;
     z-index: 99;
     background-color: var(--primaria);
     color: white;
@@ -291,7 +291,7 @@ h1 {
     cursor: pointer;
     display: none;
     transition: opacity 0.3s ease;
-    margin-top: 1rem;
+  
     
 }
 
