@@ -279,7 +279,7 @@ h1 {
 
 #btn-topo {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
     z-index: 99;
     background-color: var(--primaria);
@@ -292,6 +292,7 @@ h1 {
     cursor: pointer;
     display: none;
     transition: opacity 0.3s ease;
+    border-radius: 50%;
 }
 
 #btn-topo:hover {
