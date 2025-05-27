@@ -61,7 +61,7 @@ body,.contato {
 }
 
 .menu-link {
-  color: white;
+  color: var(--claro);
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
