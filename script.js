@@ -68,6 +68,13 @@ window.addEventListener('scroll', () => {
   ultimaPosicaoScroll = posicaoAtual;
 });
 
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+
 document.getElementById("enviar-whatsapp").addEventListener("click", function (e) {
     e.preventDefault(); // Impede o envio padrão do formulário
 
