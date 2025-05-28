@@ -237,21 +237,6 @@ h1 {
     flex: 1;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  }
-
-  .menu-toggle {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
 
 .campo-form {
     width: 100%;
@@ -409,23 +394,30 @@ h1 {
 /* ======== MEDIA QUERY ======== */
 @media (max-width: 768px) {
   .menu {
-    display: none;
     flex-direction: column;
-    width: 100%;
-    background-color: var(--primaria);
-    padding: 1rem 0;
+    align-items: center;
   }
 
-  .menu.show {
-    display: flex;
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 
-  .menu-toggle {
-    display: block;
-  }
-
+  .menu-link,
   #toggle-tema {
-    margin-top: 1rem;
-    align-self: flex-end;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .icone-formulario,
+  .icone-foto {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
