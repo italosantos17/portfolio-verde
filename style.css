@@ -394,7 +394,7 @@ h1 {
 /* ======== MEDIA QUERY ======== */
 @media (max-width: 768px) {
   .menu {
-    flex-direction: column;
+    flex-direction:line;
     align-items: center;
   }
 
@@ -421,3 +421,5 @@ h1 {
     overflow-x: hidden;
   }
 }
+
+
