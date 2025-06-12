@@ -44,7 +44,7 @@ body,.contato {
 }
 
 .menu {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: var(--maisEscuro);
@@ -430,4 +430,14 @@ i#burguer{
     text-align: center;
     padding: 10px;
     cursor: pointer;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(86, 86, 86);
+    color:var(--claro);
+    text-align: center;
+    border-top: 2px solid gray;
 }
