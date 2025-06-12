@@ -12,7 +12,7 @@
         
     }
 
-    menu > ul > a > li {
+    nav > ul > li > a {
         display: inline-block;
         
     }
