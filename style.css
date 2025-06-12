@@ -390,6 +390,7 @@ h1 {
 /* ======== MEDIA QUERY ======== */
 @media (max-width: 768px) {
   .menu {
+    display: block;
   
   }
 
