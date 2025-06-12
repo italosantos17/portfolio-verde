@@ -419,8 +419,8 @@ h1 {
 
 
 i#burguer{
-    background-color: rgb(48, 48, 48);
-    color: white;
+    background-color: var(--maisEscuro);
+    color:var(--claro);
     display: block;
     text-align: center;
     padding: 10px;
@@ -431,7 +431,7 @@ nav > ul > li > a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: rgb(86, 86, 86);
+    background-color: var(--maisEscuro)
     color:var(--claro);
     text-align: center;
     border-top: 2px solid gray;
