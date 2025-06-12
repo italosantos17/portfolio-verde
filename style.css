@@ -44,10 +44,14 @@ body,.contato {
 }
 
 .menu {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--maisEscuro);
   padding: 1rem;
+  flex-wrap: wrap;
   gap: 1rem;
+  list-style: none;
   margin: 0;
 }
 
@@ -390,7 +394,8 @@ h1 {
 /* ======== MEDIA QUERY ======== */
 @media (max-width: 768px) {
   .menu {
-  
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu ul {
@@ -418,21 +423,3 @@ h1 {
 }
 
 
-i#burguer{
-    background-color: var(--claro);
-    color:var(--claro);
-    display: block;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-nav > ul > li > a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: var(--maisEscuro)
-    color:var(--claro);
-    text-align: center;
-    border-top: 2px solid gray;
-}

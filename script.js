@@ -17,23 +17,6 @@ btnTopo.addEventListener("click", function () {
     });
 });
 
- function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-            itens.style.display = 'block'
-            } else {
-                itens.style.display = 'none'
-            }
-        }
-
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-
-        }
-
 const botaoTema = document.getElementById("toggle-tema");
 
 // Checar se o usuário já escolheu modo claro
@@ -88,7 +71,7 @@ window.addEventListener('scroll', () => {
 
 
 document.getElementById("enviar-whatsapp").addEventListener("click", function (e) {
-    e.preventDefault();
+    e.preventDefault(); // Impede o envio padrão do formulário
 
     const nome = document.getElementById("nome").value.trim();
     const mensagem = document.getElementById("mensagem").value.trim();
@@ -99,7 +82,7 @@ document.getElementById("enviar-whatsapp").addEventListener("click", function (e
     }
 
     const texto = `Olá, meu nome é ${nome}.%0A${mensagem}`;
-    const numero = "5511987287367"; 
+    const numero = "5511987287367"; // Substitua pelo seu número do WhatsApp com DDI e DDD
 
     const link = `https://wa.me/${numero}?text=${texto}`;
     window.open(link, '_blank');
