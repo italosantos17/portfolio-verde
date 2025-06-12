@@ -52,7 +52,8 @@ body,.contato {
 }
 
 .menu li {
-  
+  display: flex;
+  align-items: center;
 }
 
 .menu-link {
@@ -389,7 +390,6 @@ h1 {
 /* ======== MEDIA QUERY ======== */
 @media (max-width: 768px) {
   .menu {
-    display: block;
   
   }
 
@@ -419,7 +419,7 @@ h1 {
 
 
 i#burguer{
-    background-color: var(--maisEscuro);
+    background-color: var(--claro);
     color:var(--claro);
     display: block;
     text-align: center;
