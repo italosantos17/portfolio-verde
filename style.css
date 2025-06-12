@@ -45,13 +45,9 @@ body,.contato {
 
 .menu {
   display: none;
-  justify-content: center;
-  align-items: center;
   background-color: var(--maisEscuro);
   padding: 1rem;
-  flex-wrap: wrap;
   gap: 1rem;
-  list-style: none;
   margin: 0;
 }
 
@@ -394,8 +390,7 @@ h1 {
 /* ======== MEDIA QUERY ======== */
 @media (max-width: 768px) {
   .menu {
-    flex-direction: column;
-    align-items: center;
+  
   }
 
   .menu ul {
