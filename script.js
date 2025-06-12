@@ -71,7 +71,7 @@ window.addEventListener('scroll', () => {
 
 
 document.getElementById("enviar-whatsapp").addEventListener("click", function (e) {
-    e.preventDefault(); // Impede o envio padrão do formulário
+    e.preventDefault();
 
     const nome = document.getElementById("nome").value.trim();
     const mensagem = document.getElementById("mensagem").value.trim();
@@ -82,7 +82,7 @@ document.getElementById("enviar-whatsapp").addEventListener("click", function (e
     }
 
     const texto = `Olá, meu nome é ${nome}.%0A${mensagem}`;
-    const numero = "5511987287367"; // Substitua pelo seu número do WhatsApp com DDI e DDD
+    const numero = "5511987287367"; 
 
     const link = `https://wa.me/${numero}?text=${texto}`;
     window.open(link, '_blank');
