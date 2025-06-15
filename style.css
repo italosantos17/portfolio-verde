@@ -62,7 +62,7 @@ body,.contato {
 
 nav > ul > li > a {
     display: block;
-    
+
 }
 
 .menu-link {
@@ -92,6 +92,14 @@ nav > ul > li > a {
 
 .menu-link:hover {
   text-decoration: none;
+}
+
+i#burguer{
+    color: var(--claro);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
 }
 
 #toggle-tema {
