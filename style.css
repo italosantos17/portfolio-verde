@@ -60,6 +60,11 @@ body,.contato {
   align-items: center;
 }
 
+nav > ul > li > a {
+    display: block;
+    
+}
+
 .menu-link {
   color: var(--claro);
   text-decoration: none;
