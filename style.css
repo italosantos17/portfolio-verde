@@ -392,17 +392,31 @@ h1 {
 }
 
 /* ======== MEDIA QUERY ======== */
-@media (max-width: 768px) {
-  .menu {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .menu ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
+
+@media screen and (min-width:768px) {
+    i#burguer {
+        display: none;
+        
+    }
+
+    menu {
+        display: block;
+        text-align: center;
+        
+    }
+
+    menu > ul > a > li {
+        display: inline-block;
+        
+    }
+
+    main {
+        width: 768px;
+
+    }
+    
+}
 
   .menu-link,
   #toggle-tema {
@@ -420,6 +434,6 @@ h1 {
   body {
     overflow-x: hidden;
   }
-}
+
 
 
