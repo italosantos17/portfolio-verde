@@ -44,7 +44,7 @@ body,.contato {
 }
 
 .menu {
-  display: flex;
+  
   justify-content: center;
   align-items: center;
   background-color: var(--maisEscuro);
@@ -56,7 +56,7 @@ body,.contato {
 }
 
 .menu li {
-  display: flex;
+  
   align-items: center;
 }
 
