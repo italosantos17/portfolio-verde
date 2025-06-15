@@ -44,7 +44,7 @@ body,.contato {
 }
 
 .menu {
-  
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--maisEscuro);
@@ -56,13 +56,8 @@ body,.contato {
 }
 
 .menu li {
-  
+  display: flex;
   align-items: center;
-}
-
-nav > ul > li > a {
-    display: block;
-
 }
 
 .menu-link {
@@ -92,14 +87,6 @@ nav > ul > li > a {
 
 .menu-link:hover {
   text-decoration: none;
-}
-
-i#burguer{
-    color: var(--claro);
-    display: block;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
 }
 
 #toggle-tema {
@@ -405,31 +392,17 @@ h1 {
 }
 
 /* ======== MEDIA QUERY ======== */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
 
-
-@media screen and (min-width:768px) {
-    i#burguer {
-        display: none;
-        
-    }
-
-    .navegacao {
-        display: block;
-        text-align: center;
-        
-    }
-
-    menu > ul > a > li {
-        display: inline-block;
-        
-    }
-
-    main {
-        width: 768px;
-
-    }
-    
-}
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
   .menu-link,
   #toggle-tema {
@@ -447,6 +420,6 @@ h1 {
   body {
     overflow-x: hidden;
   }
-
+}
 
 
